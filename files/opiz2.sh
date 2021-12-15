@@ -48,8 +48,8 @@ URL_APPARMOR_PROFILE="https://version.home-assistant.io/apparmor.txt"
 
 # Check env
 command -v systemctl > /dev/null 2>&1 || MISSING_PACKAGES+=("systemd")
-#command -v nmcli > /dev/null 2>&1 || MISSING_PACKAGES+=("network-manager")
-command -v apparmor_parser > /dev/null 2>&1 || MISSING_PACKAGES+=("apparmor")
+command -v nmcli > /dev/null 2>&1 || MISSING_PACKAGES+=("network-manager")
+#command -v apparmor_parser > /dev/null 2>&1 || MISSING_PACKAGES+=("apparmor")
 command -v docker > /dev/null 2>&1 || MISSING_PACKAGES+=("docker")
 command -v jq > /dev/null 2>&1 || MISSING_PACKAGES+=("jq")
 command -v curl > /dev/null 2>&1 || MISSING_PACKAGES+=("curl")
