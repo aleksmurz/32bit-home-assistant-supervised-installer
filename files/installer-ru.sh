@@ -215,8 +215,8 @@ EOF
 ##
 # Pull supervisor image
 info "Установка контейнера Docker Supervisor"
-docker pull "$HASSIO_DOCKER:$HASSIO_VERSION" > /dev/null
-docker tag "$HASSIO_DOCKER:$HASSIO_VERSION" "$HASSIO_DOCKER:latest" > /dev/null
+docker pull "homeassistant/i386-hassio-supervisor:2021.12.2" > /dev/null
+docker tag "homeassistant/i386-hassio-supervisor:2021.12.2" "homeassistant/i386-hassio-supervisor:latest" > /dev/null
 
 ##
 # Install Hass.io Supervisor
