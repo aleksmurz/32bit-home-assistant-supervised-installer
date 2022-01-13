@@ -114,6 +114,7 @@ fi
 
 info "Перезапуск NetworkManager"
 systemctl restart "${SERVICE_NM}"
+sleep 5
 
 # Parse command line parameters
 while [[ $# -gt 0 ]]; do
